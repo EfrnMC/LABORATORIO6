@@ -20,6 +20,7 @@ public:
         cout << "Precio: " << precio << endl;
     }
 };
+
 //Se crea una clase a partir de la principal, se hereda la clase Automovil de la clase principal Vehiculo
 class Automovil : public vehiculo {
 private:
@@ -83,11 +84,12 @@ public: //Se crea la clase publica con todos los datos a mostrar
     cliente(string nom, int ed, int tran ) : edad(ed), nombre(nom), transaccion(tran) {}
     void mostrarCliente() {
         cout << "\nINFORMACION DEL CLIENTE" << endl;
-        cout << "Nombre: " << nombre << endl;
+        cout << "Operacion: " << nombre << endl;
         cout << "Edad: " << edad << endl;
         cout << "Transaccion: " << transaccion << endl;
     }
 };
+
 //En la funcion principal se mandan a llamar todas las funciones que se crearon anteriormente pero esta vez con los datos deseados a mostrar.
 int main() {
     Automovil miAutomovil("Toyota Corolla", 2022, 25000, 4);
